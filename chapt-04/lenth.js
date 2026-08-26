@@ -35,3 +35,5 @@ console.log(str.endsWith("script"))
 
 console.log(str.indexOf('a'))
 console.log(str.lastIndexOf('a'))
+
+console.log(str.slice(0,4))
