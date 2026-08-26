@@ -1,4 +1,4 @@
-let str="javascipt";
+let str="javascript";
 console.log(str.length);
 
 // toUpperCase()
@@ -26,3 +26,7 @@ console.log(str.includes("y"))
 
 // startWith
 console.log(str.startsWith("jav"))
+
+// endWith()
+
+console.log(str.endsWith("script"))
