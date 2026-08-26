@@ -30,3 +30,8 @@ console.log(str.startsWith("jav"))
 // endWith()
 
 console.log(str.endsWith("script"))
+
+// indexOf()
+
+console.log(str.indexOf('a'))
+console.log(str.lastIndexOf('a'))
