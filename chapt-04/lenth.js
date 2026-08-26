@@ -36,4 +36,15 @@ console.log(str.endsWith("script"))
 console.log(str.indexOf('a'))
 console.log(str.lastIndexOf('a'))
 
-console.log(str.slice(0,4))
+console.log(str.slice(-0))
+
+// console.log(str.substr(0,4))
+
+// replace()
+
+console.log(str.replace("javascript","python"))
+
+// split()
+console.log(str.split(""))
+
+console.log(str.repeat(3))
