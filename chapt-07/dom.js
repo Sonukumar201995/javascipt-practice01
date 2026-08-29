@@ -1,5 +1,6 @@
 console.log(document.body.firstChild);
 
-console.log(document.body.lastChild);
+let a=document.body.firstChild;
+console.log(a.parentNode);
 
-console.log(document.body.childNodes);
+console.log(a.nextSibling)
