@@ -1,11 +1,5 @@
-let body=document.body;
-console.log(body);
+console.log(document.body.firstChild);
 
-let title=document.title;
-console.log(title)
+console.log(document.body.lastChild);
 
-let head=document.head;
-console.log(head);
-
-let element=document.documentElement;
-console.log(element);
+console.log(document.body.childNodes);
