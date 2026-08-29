@@ -1,5 +1,6 @@
-let a=document.body
+let t=document.body
+console.log(t.firstElementChild);
 
-console.log("first child b is :" ,a.firstChild);
-
-console.log("first child b is :",a.firstElementChild);
+let tab=document.body
+console.log(tab.firstElementChild);
+console.log(tab.rows)
