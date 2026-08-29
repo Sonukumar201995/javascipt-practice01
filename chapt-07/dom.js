@@ -1,7 +1,5 @@
-console.log(document.body.firstChild);
+let a=document.body
 
-let a=document.body.firstChild;
-console.log(a.parentNode);
+console.log("first child b is :" ,a.firstChild);
 
-console.log(a.nextSibling)
-console.log(a.parentElement)
+console.log("first child b is :",a.firstElementChild);
