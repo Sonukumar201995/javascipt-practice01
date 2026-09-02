@@ -1,11 +1,6 @@
-let box=document.getElementById("box");
-console.log(box.innerHTML)
+let first=document.getElementById("id1");
+let a=first.getAttribute("class");
+console.log(a);
 
-let res=box.innerHTML="<h2>hello i am h2 heading </h2>"
-console.log(res);
-
-
-let out=document.getElementById("box");
-console.log(out.outerHTML);
-
-out.outerHTML="<h3>headding 3</h3>"
+let b=first.getAttribute("id");
+console.log(b);
