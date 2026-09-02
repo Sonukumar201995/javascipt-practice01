@@ -8,3 +8,4 @@ console.log(b);
 console.log(first.hasAttribute("class"));
 console.log(first.hasAttribute("style"));
 
+console.log(first.setAttribute("class","sonu"))
