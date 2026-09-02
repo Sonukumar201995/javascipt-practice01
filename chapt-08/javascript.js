@@ -4,3 +4,7 @@ console.log(a);
 
 let b=first.getAttribute("id");
 console.log(b);
+
+console.log(first.hasAttribute("class"));
+console.log(first.hasAttribute("style"));
+
