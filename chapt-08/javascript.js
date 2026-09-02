@@ -1,17 +1,7 @@
-// let first=document.getElementById("id1");
-// let a=first.getAttribute("class");
-// console.log(a);
+let first=document.getElementsByTagName("div")[0];
+// first.innerHTML=first.innerHTML+ '<p>i am paragraph</p>'
 
-// let b=first.getAttribute("id");
-// console.log(b);
 
-// console.log(first.hasAttribute("class"));
-// console.log(first.hasAttribute("style"));
-
-// console.log(first.setAttribute("class","sonu"))
-// console.log(first.removeAttribute("class"))
-
-let first=document.getElementById("id1");
-console.log(first.dataset);
-console.log(first.dataset.game);
-console.log(first.dataset.player)
+let div=document.createElement("div")
+div.innerHTML='<h1>hello world</h1>'
+first.append(div);
