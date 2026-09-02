@@ -1,7 +1,21 @@
-let first=document.getElementsByTagName("div")[0];
-// first.innerHTML=first.innerHTML+ '<p>i am paragraph</p>'
+let first = document.getElementById("first");
 
+first.insertAdjacentHTML(
+  'beforebegin',
+  '<div class="test">before begin</div>'
+);
 
-let div=document.createElement("div")
-div.innerHTML='<h1>hello world</h1>'
-first.append(div);
+first.insertAdjacentHTML(
+  'afterbegin',
+  '<div class="test">after begin</div>'
+);
+
+first.insertAdjacentHTML(
+  'beforeend',
+  '<div class="test">before end</div>'
+);
+
+first.insertAdjacentHTML(
+  'afterend',
+  '<div class="test">after end</div>'
+);
