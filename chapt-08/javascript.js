@@ -1,19 +1,11 @@
 let btn = document.getElementById("btn");
 
-let x = function (e) {
-    alert("hello 1");
-};
+btn.addEventListener("click", function (e) {
 
-let y = function (e) {
-    alert("hello 2");
-};
+    console.log(e);
+    console.log("Event type:", e.type);
+    console.log("Clicked element:", e.target);
+    console.log("Mouse X:", e.clientX);
+    console.log("Mouse Y:", e.clientY);
+});
 
-// Event attach karo
-btn.addEventListener("click", x);
-btn.addEventListener("click", y);
-
-let a = prompt("Enter your number");
-
-if (a == "2") {
-    btn.removeEventListener("click", y);
-}
