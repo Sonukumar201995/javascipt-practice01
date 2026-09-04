@@ -7,7 +7,7 @@ function checkAge(age, callback) {
     }
 }
 
-checkAge(17, (error, message) => {
+checkAge(170, (error, message) => {
 
     if (error) {
         console.log("Error:", error);
