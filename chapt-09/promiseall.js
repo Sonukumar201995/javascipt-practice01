@@ -1,11 +1,9 @@
-let p=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        resolve(true)
-    },1000)
-})
+let res = Promise.reject(new Error("something went wrong"));
 
-let res=Promise.resolve(6);
-res.then((val)=>{
-    console.log(val);
-})
-
+res
+    .then((val) => {
+        console.log(val);
+    })
+    .catch((error) => {
+        console.log(error.message);
+    });
