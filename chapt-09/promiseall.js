@@ -12,8 +12,11 @@ let p2=new Promise((res,rej)=>{
 
 let p3=new Promise((res,rej)=>{
     setTimeout(()=>{
-        res("value 3")
+        rej(new Error("interval server error"))
     },3000)
+})
+p3.catch((err)=>{
+    console.log("this is error",err)
 })
 
 
@@ -30,7 +33,9 @@ p3.then((val)=>{
 })
 // promise all methods
 
-let promiseall=Promise.all([p1,p2,p3]);
-promiseall.then((val)=>{
+let promise=Promise.allSettled([p1,p2,p3]);
+console.log(promise);
+
+promise.then((val)=>{
     console.log(val);
 })
