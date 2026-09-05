@@ -12,11 +12,8 @@ let p2=new Promise((res,rej)=>{
 
 let p3=new Promise((res,rej)=>{
     setTimeout(()=>{
-        rej(new Error("interval server error"))
+        res("value 3")
     },3000)
-})
-p3.catch((err)=>{
-    console.log("this is error",err)
 })
 
 
@@ -33,9 +30,9 @@ p3.then((val)=>{
 })
 // promise all methods
 
-let promise=Promise.allSettled([p1,p2,p3]);
+let promise=Promise.race([p1,p2,p3]);
 console.log(promise);
 
 promise.then((val)=>{
-    console.log(val);
+    console.log("first resolve",val);
 })
