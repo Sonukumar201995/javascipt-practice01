@@ -2,4 +2,8 @@ let sum=(a,b)=>{
     return a+b;
 }
 
-module.exports=sum;
+let multiply=(a,b)=>{
+    return a*b;
+}
+
+export {sum,multiply}

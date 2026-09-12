@@ -1,3 +1,4 @@
-const sum=require("./math");
+import {sum,multiply} from './math.js'
 
-console.log(sum(5,10));
+console.log(sum(10,2));
+console.log(multiply(2,6))
