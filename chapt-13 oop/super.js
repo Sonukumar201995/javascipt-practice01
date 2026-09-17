@@ -1,4 +1,3 @@
-
 class Animal {
     sound() {
         console.log("Animal makes a sound");
